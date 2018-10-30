@@ -1,0 +1,657 @@
+[DEBUG][2018/10/11 13:26:18537][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/getUser]
+[DEBUG][2018/10/11 13:26:18540][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/getUser
+[DEBUG][2018/10/11 13:26:18540][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]
+[DEBUG][2018/10/11 13:26:18540][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/11 13:26:18541][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/11 13:26:18541][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43626a33] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/11 13:26:18541][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/11 13:26:21805][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/getUser]
+[DEBUG][2018/10/11 13:26:21806][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/getUser
+[DEBUG][2018/10/11 13:26:21806][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]
+[DEBUG][2018/10/11 13:26:21806][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/11 13:26:21807][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/11 13:26:21808][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13f73b2d] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/11 13:26:21808][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/11 13:26:21950][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [jdbc:mysql://101.132.116.22:3306/db_zsl?useSSL=false, UserName=root@36.5.116.113, MySQL Connector Java] will not be managed by Spring
+[DEBUG][2018/10/11 13:26:21951][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t where id = ? 
+[DEBUG][2018/10/11 13:26:21951][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 3(Integer)
+[DEBUG][2018/10/11 13:26:21967][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 1
+[DEBUG][2018/10/11 13:26:21968][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13f73b2d]
+[DEBUG][2018/10/11 13:26:21968][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/11 13:26:21970][org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:163)]
+Written [User [Hash = -90505805, id=3, userName=songQing, password=123456, age=18, serialVersionUID=1]] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7a0ad36]
+[DEBUG][2018/10/11 13:26:21971][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:26:21971][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 13:26:23988][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/getUser]
+[DEBUG][2018/10/11 13:26:23989][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/getUser
+[DEBUG][2018/10/11 13:26:23989][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]
+[DEBUG][2018/10/11 13:26:23989][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/11 13:26:23990][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/11 13:26:23990][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6561bb94] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/11 13:26:23991][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/11 13:26:246  ][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [jdbc:mysql://101.132.116.22:3306/db_zsl?useSSL=false, UserName=root@36.5.116.113, MySQL Connector Java] will not be managed by Spring
+[DEBUG][2018/10/11 13:26:246  ][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t where id = ? 
+[DEBUG][2018/10/11 13:26:247  ][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 1(Integer)
+[DEBUG][2018/10/11 13:26:2424 ][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 1
+[DEBUG][2018/10/11 13:26:2426 ][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6561bb94]
+[DEBUG][2018/10/11 13:26:2426 ][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/11 13:26:2428 ][org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:163)]
+Written [User [Hash = 67317464, id=1, userName=杜健, password=sfasgfaf, age=24, serialVersionUID=1]] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7a0ad36]
+[DEBUG][2018/10/11 13:26:2428 ][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:26:2429 ][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 13:26:28373][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/getUser]
+[DEBUG][2018/10/11 13:26:28373][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/getUser
+[DEBUG][2018/10/11 13:26:28374][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]
+[DEBUG][2018/10/11 13:26:28374][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/11 13:26:28375][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/11 13:26:28375][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@716f6ab7] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/11 13:26:28375][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/11 13:26:28391][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [jdbc:mysql://101.132.116.22:3306/db_zsl?useSSL=false, UserName=root@36.5.116.113, MySQL Connector Java] will not be managed by Spring
+[DEBUG][2018/10/11 13:26:28392][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t where id = ? 
+[DEBUG][2018/10/11 13:26:28393][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 4(Integer)
+[DEBUG][2018/10/11 13:26:28409][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 1
+[DEBUG][2018/10/11 13:26:28410][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@716f6ab7]
+[DEBUG][2018/10/11 13:26:28410][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/11 13:26:28414][org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:163)]
+Written [User [Hash = 1683240561, id=4, userName=hahahaha, password=1234, age=18, serialVersionUID=1]] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7a0ad36]
+[DEBUG][2018/10/11 13:26:28414][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:26:28414][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 13:26:37443][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [org.apache.commons.dbcp.PoolableConnection@52b32b68] will not be managed by Spring
+[DEBUG][2018/10/11 13:26:37443][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t where id = ? 
+[DEBUG][2018/10/11 13:26:37446][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43626a33]
+[DEBUG][2018/10/11 13:26:37446][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/11 13:26:37447][org.springframework.jdbc.datasource.DataSourceUtils.releaseConnection(DataSourceUtils.java:297)]
+Could not close JDBC Connection
+java.sql.SQLException: Already closed.
+	at org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:84)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close(PoolingDataSource.java:181)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doCloseConnection(DataSourceUtils.java:341)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:328)
+	at org.springframework.jdbc.datasource.DataSourceUtils.releaseConnection(DataSourceUtils.java:294)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.close(SpringManagedTransaction.java:123)
+	at org.apache.ibatis.executor.BaseExecutor.close(BaseExecutor.java:83)
+	at org.apache.ibatis.executor.CachingExecutor.close(CachingExecutor.java:61)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.close(DefaultSqlSession.java:210)
+	at org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:170)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:369)
+	at com.sun.proxy.$Proxy31.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:163)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy32.selectByPrimaryKey(Unknown Source)
+	at com.study.ssm.service.impl.UserServiceImpl.getUserById(UserServiceImpl.java:20)
+	at com.study.ssm.controller.UserController.getUser(UserController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[DEBUG][2018/10/11 13:26:37463][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG][2018/10/11 13:26:37464][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG][2018/10/11 13:26:37464][org.springframework.core.env.AbstractEnvironment.<init>(AbstractEnvironment.java:126)]
+Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[INFO ][2018/10/11 13:26:37464][org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[DEBUG][2018/10/11 13:26:37467][org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:73)]
+Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+[DEBUG][2018/10/11 13:26:37469][org.springframework.beans.factory.xml.BeansDtdResolver.resolveEntity(BeansDtdResolver.java:74)]
+Found beans DTD [http://www.springframework.org/dtd/spring-beans-2.0.dtd] in classpath: spring-beans-2.0.dtd
+[DEBUG][2018/10/11 13:26:37500][org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:98)]
+Loading bean definitions
+[DEBUG][2018/10/11 13:26:37511][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'DB2'
+[DEBUG][2018/10/11 13:26:37512][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'DB2'
+[DEBUG][2018/10/11 13:26:37512][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'DB2' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37520][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'DB2'
+[DEBUG][2018/10/11 13:26:37520][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'Derby'
+[DEBUG][2018/10/11 13:26:37520][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'Derby'
+[DEBUG][2018/10/11 13:26:37521][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'Derby' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37522][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'Derby'
+[DEBUG][2018/10/11 13:26:37522][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'H2'
+[DEBUG][2018/10/11 13:26:37522][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'H2'
+[DEBUG][2018/10/11 13:26:37523][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'H2' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37523][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'H2'
+[DEBUG][2018/10/11 13:26:37523][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'HSQL'
+[DEBUG][2018/10/11 13:26:37524][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'HSQL'
+[DEBUG][2018/10/11 13:26:37524][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'HSQL' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37525][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'HSQL'
+[DEBUG][2018/10/11 13:26:37525][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'Informix'
+[DEBUG][2018/10/11 13:26:37525][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'Informix'
+[DEBUG][2018/10/11 13:26:37526][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'Informix' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37526][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'Informix'
+[DEBUG][2018/10/11 13:26:37529][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'MS-SQL'
+[DEBUG][2018/10/11 13:26:37529][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'MS-SQL'
+[DEBUG][2018/10/11 13:26:37530][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'MS-SQL' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37531][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'MS-SQL'
+[DEBUG][2018/10/11 13:26:37531][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'MySQL'
+[DEBUG][2018/10/11 13:26:37532][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'MySQL'
+[DEBUG][2018/10/11 13:26:37532][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'MySQL' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37533][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'MySQL'
+[DEBUG][2018/10/11 13:26:37533][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'Oracle'
+[DEBUG][2018/10/11 13:26:37533][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'Oracle'
+[DEBUG][2018/10/11 13:26:37533][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'Oracle' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37535][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'Oracle'
+[DEBUG][2018/10/11 13:26:37536][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'PostgreSQL'
+[DEBUG][2018/10/11 13:26:37536][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'PostgreSQL'
+[DEBUG][2018/10/11 13:26:37536][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'PostgreSQL' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37537][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'PostgreSQL'
+[DEBUG][2018/10/11 13:26:37537][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'Sybase'
+[DEBUG][2018/10/11 13:26:37538][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'Sybase'
+[DEBUG][2018/10/11 13:26:37538][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'Sybase' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37539][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'Sybase'
+[DEBUG][2018/10/11 13:26:37539][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'Hana'
+[DEBUG][2018/10/11 13:26:37539][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:450)]
+Creating instance of bean 'Hana'
+[DEBUG][2018/10/11 13:26:37540][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:523)]
+Eagerly caching bean 'Hana' to allow for resolving potential circular references
+[DEBUG][2018/10/11 13:26:37541][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478)]
+Finished creating instance of bean 'Hana'
+[INFO ][2018/10/11 13:26:37541][org.springframework.jdbc.support.SQLErrorCodesFactory.<init>(SQLErrorCodesFactory.java:126)]
+SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+[DEBUG][2018/10/11 13:26:37541][org.springframework.jdbc.support.SQLErrorCodesFactory.getErrorCodes(SQLErrorCodesFactory.java:199)]
+Looking up default SQLErrorCodes for DataSource [org.apache.commons.dbcp.BasicDataSource@5cfa1d8b]
+[DEBUG][2018/10/11 13:26:37543][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/11 13:26:37544][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/11 13:26:37545][org.springframework.jdbc.support.SQLErrorCodesFactory.getErrorCodes(SQLErrorCodesFactory.java:217)]
+Database product name cached for DataSource [org.apache.commons.dbcp.BasicDataSource@5cfa1d8b]: name is 'MySQL'
+[DEBUG][2018/10/11 13:26:37545][org.springframework.jdbc.support.SQLErrorCodesFactory.getErrorCodes(SQLErrorCodesFactory.java:175)]
+SQL error codes for 'MySQL' found
+[DEBUG][2018/10/11 13:26:37546][org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:281)]
+Unable to translate SQLException with Error code '0', will now try the fallback translator
+[DEBUG][2018/10/11 13:26:37547][org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:134)]
+Resolving exception from handler [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]: org.springframework.dao.DataAccessResourceFailureException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+### The error may exist in file [D:\JAVA\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32-x86_64\springsuite-workSpace\ssm\target\classes\com\study\ssm\mapping\UserMapper.xml]
+### The error may involve com.study.ssm.dao.UserMapper.selectByPrimaryKey
+### The error occurred while executing a query
+### SQL: select                 id, user_name, password, age         from user_t     where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+; SQL []; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+[DEBUG][2018/10/11 13:26:37550][org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:134)]
+Resolving exception from handler [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]: org.springframework.dao.DataAccessResourceFailureException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+### The error may exist in file [D:\JAVA\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32-x86_64\springsuite-workSpace\ssm\target\classes\com\study\ssm\mapping\UserMapper.xml]
+### The error may involve com.study.ssm.dao.UserMapper.selectByPrimaryKey
+### The error occurred while executing a query
+### SQL: select                 id, user_name, password, age         from user_t     where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+; SQL []; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+[DEBUG][2018/10/11 13:26:37550][org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:134)]
+Resolving exception from handler [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]: org.springframework.dao.DataAccessResourceFailureException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+### The error may exist in file [D:\JAVA\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32-x86_64\springsuite-workSpace\ssm\target\classes\com\study\ssm\mapping\UserMapper.xml]
+### The error may involve com.study.ssm.dao.UserMapper.selectByPrimaryKey
+### The error occurred while executing a query
+### SQL: select                 id, user_name, password, age         from user_t     where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+; SQL []; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+[DEBUG][2018/10/11 13:26:37551][org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:134)]
+Resolving exception from handler [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]: org.springframework.dao.DataAccessResourceFailureException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+### The error may exist in file [D:\JAVA\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32-x86_64\springsuite-workSpace\ssm\target\classes\com\study\ssm\mapping\UserMapper.xml]
+### The error may involve com.study.ssm.dao.UserMapper.selectByPrimaryKey
+### The error occurred while executing a query
+### SQL: select                 id, user_name, password, age         from user_t     where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+; SQL []; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+[DEBUG][2018/10/11 13:26:37551][org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:134)]
+Resolving exception from handler [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]: org.springframework.dao.DataAccessResourceFailureException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+### The error may exist in file [D:\JAVA\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32-x86_64\springsuite-workSpace\ssm\target\classes\com\study\ssm\mapping\UserMapper.xml]
+### The error may involve com.study.ssm.dao.UserMapper.selectByPrimaryKey
+### The error occurred while executing a query
+### SQL: select                 id, user_name, password, age         from user_t     where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+; SQL []; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+[DEBUG][2018/10/11 13:26:37552][org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:134)]
+Resolving exception from handler [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]: org.springframework.dao.DataAccessResourceFailureException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+### The error may exist in file [D:\JAVA\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32-x86_64\springsuite-workSpace\ssm\target\classes\com\study\ssm\mapping\UserMapper.xml]
+### The error may involve com.study.ssm.dao.UserMapper.selectByPrimaryKey
+### The error occurred while executing a query
+### SQL: select                 id, user_name, password, age         from user_t     where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+; SQL []; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+[DEBUG][2018/10/11 13:26:37552][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:989)]
+Could not complete request
+org.springframework.dao.DataAccessResourceFailureException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+### The error may exist in file [D:\JAVA\spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32-x86_64\springsuite-workSpace\ssm\target\classes\com\study\ssm\mapping\UserMapper.xml]
+### The error may involve com.study.ssm.dao.UserMapper.selectByPrimaryKey
+### The error occurred while executing a query
+### SQL: select                 id, user_name, password, age         from user_t     where id = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+; SQL []; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:79)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+	at com.sun.proxy.$Proxy31.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:163)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy32.selectByPrimaryKey(Unknown Source)
+	at com.study.ssm.service.impl.UserServiceImpl.getUserById(UserServiceImpl.java:20)
+	at com.study.ssm.controller.UserController.getUser(UserController.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:966)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:868)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:842)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:917)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1246)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1241)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4102)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4071)
+	at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:248)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:302)
+	at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:54)
+	at com.sun.proxy.$Proxy39.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:75)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:85)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:57)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:59)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:267)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:137)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:96)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:77)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:108)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:102)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	... 47 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 7,139,862 milliseconds ago.  The last packet sent successfully to the server was 18,899 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:988)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3552)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3452)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3893)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1369)
+	at com.mysql.jdbc.DatabaseMetaData.getUserName(DatabaseMetaData.java:6288)
+	at org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:104)
+	at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.toString(PoolingDataSource.java:344)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:279)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:72)
+	... 60 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3001)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462)
+	... 76 more
+[DEBUG][2018/10/11 13:26:4550 ][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/user/userList]
+[DEBUG][2018/10/11 13:26:4551 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/userList
+[DEBUG][2018/10/11 13:26:4552 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public java.lang.String com.study.ssm.controller.UserController.getUserList(org.springframework.ui.Model)]
+[DEBUG][2018/10/11 13:26:4552 ][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/11 13:26:4552 ][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/user/userList] is: -1
+[DEBUG][2018/10/11 13:26:4552 ][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/11 13:26:4553 ][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f02f7c5] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/11 13:26:4553 ][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/11 13:26:4569 ][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [jdbc:mysql://101.132.116.22:3306/db_zsl?useSSL=false, UserName=root@36.5.116.113, MySQL Connector Java] will not be managed by Spring
+[DEBUG][2018/10/11 13:26:4570 ][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t 
+[DEBUG][2018/10/11 13:26:4571 ][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 
+[DEBUG][2018/10/11 13:26:4588 ][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 14
+[DEBUG][2018/10/11 13:26:4589 ][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f02f7c5]
+[DEBUG][2018/10/11 13:26:4589 ][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/11 13:26:4590 ][org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1241)]
+Rendering view [org.springframework.web.servlet.view.JstlView: name 'userList'; URL [/WEB-INF/jsp/userList.jsp]] in DispatcherServlet with name 'SpringMVC'
+[DEBUG][2018/10/11 13:26:4590 ][org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)]
+Added model object 'userList' of type [java.util.ArrayList] to request in view with name 'userList'
+[DEBUG][2018/10/11 13:26:4591 ][org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:166)]
+Forwarding to resource [/WEB-INF/jsp/userList.jsp] in InternalResourceView 'userList'
+[DEBUG][2018/10/11 13:26:45238][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 13:26:45275][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/css/bootstrap.min.css]
+[DEBUG][2018/10/11 13:26:45275][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap.min.css
+[DEBUG][2018/10/11 13:26:45276][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap.min.css]
+[DEBUG][2018/10/11 13:26:45276][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap.min.css
+[DEBUG][2018/10/11 13:26:45277][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap.min.css]
+[DEBUG][2018/10/11 13:26:45277][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:168)]
+Matching patterns for request [/css/bootstrap.min.css] are [/css/**]
+[DEBUG][2018/10/11 13:26:45278][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:193)]
+URI Template variables for request [/css/bootstrap.min.css] are {}
+[DEBUG][2018/10/11 13:26:45278][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:123)]
+Mapping [/css/bootstrap.min.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7c70b384]]] and 1 interceptor
+[DEBUG][2018/10/11 13:26:45278][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/css/bootstrap.min.css] is: -1
+[DEBUG][2018/10/11 13:26:45281][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:26:45281][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 13:26:45283][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/js/jquery.js]
+[DEBUG][2018/10/11 13:26:45283][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /js/jquery.js
+[DEBUG][2018/10/11 13:26:45284][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/js/jquery.js]
+[DEBUG][2018/10/11 13:26:45284][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/css/bootstrap-theme.css]
+[DEBUG][2018/10/11 13:26:45285][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap-theme.css
+[DEBUG][2018/10/11 13:26:45289][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap-theme.css]
+[DEBUG][2018/10/11 13:26:45289][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap-theme.css
+[DEBUG][2018/10/11 13:26:45290][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap-theme.css]
+[DEBUG][2018/10/11 13:26:45290][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:168)]
+Matching patterns for request [/css/bootstrap-theme.css] are [/css/**]
+[DEBUG][2018/10/11 13:26:45290][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:193)]
+URI Template variables for request [/css/bootstrap-theme.css] are {}
+[DEBUG][2018/10/11 13:26:45291][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:123)]
+Mapping [/css/bootstrap-theme.css] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7c70b384]]] and 1 interceptor
+[DEBUG][2018/10/11 13:26:45291][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/css/bootstrap-theme.css] is: -1
+[DEBUG][2018/10/11 13:26:45292][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:26:45292][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 13:26:45293][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/js/bootstrap.min.js]
+[DEBUG][2018/10/11 13:26:45284][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /js/jquery.js
+[DEBUG][2018/10/11 13:26:45295][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/js/jquery.js]
+[DEBUG][2018/10/11 13:26:45295][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:168)]
+Matching patterns for request [/js/jquery.js] are [/js/**]
+[DEBUG][2018/10/11 13:26:45295][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:193)]
+URI Template variables for request [/js/jquery.js] are {}
+[DEBUG][2018/10/11 13:26:45296][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:123)]
+Mapping [/js/jquery.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/js/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7c7515a6]]] and 1 interceptor
+[DEBUG][2018/10/11 13:26:45296][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/js/jquery.js] is: -1
+[DEBUG][2018/10/11 13:26:45297][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:26:45297][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 13:26:45293][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /js/bootstrap.min.js
+[DEBUG][2018/10/11 13:26:45298][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/js/bootstrap.min.js]
+[DEBUG][2018/10/11 13:26:45299][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /js/bootstrap.min.js
+[DEBUG][2018/10/11 13:26:45299][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/js/bootstrap.min.js]
+[DEBUG][2018/10/11 13:26:45299][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:168)]
+Matching patterns for request [/js/bootstrap.min.js] are [/js/**]
+[DEBUG][2018/10/11 13:26:45300][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:193)]
+URI Template variables for request [/js/bootstrap.min.js] are {}
+[DEBUG][2018/10/11 13:26:45300][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:123)]
+Mapping [/js/bootstrap.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/js/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7c7515a6]]] and 1 interceptor
+[DEBUG][2018/10/11 13:26:45300][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/js/bootstrap.min.js] is: -1
+[DEBUG][2018/10/11 13:26:45301][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:26:45302][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 13:26:45310][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/js/bootstrap-notify.min.js]
+[DEBUG][2018/10/11 13:26:45310][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /js/bootstrap-notify.min.js
+[DEBUG][2018/10/11 13:26:45311][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/js/bootstrap-notify.min.js]
+[DEBUG][2018/10/11 13:26:45311][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /js/bootstrap-notify.min.js
+[DEBUG][2018/10/11 13:26:45311][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/js/bootstrap-notify.min.js]
+[DEBUG][2018/10/11 13:26:45312][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:168)]
+Matching patterns for request [/js/bootstrap-notify.min.js] are [/js/**]
+[DEBUG][2018/10/11 13:26:45312][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:193)]
+URI Template variables for request [/js/bootstrap-notify.min.js] are {}
+[DEBUG][2018/10/11 13:26:45312][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:123)]
+Mapping [/js/bootstrap-notify.min.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/js/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7c7515a6]]] and 1 interceptor
+[DEBUG][2018/10/11 13:26:45315][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/js/bootstrap-notify.min.js] is: -1
+[DEBUG][2018/10/11 13:26:45312][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/js/common.js]
+[DEBUG][2018/10/11 13:26:45316][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /js/common.js
+[DEBUG][2018/10/11 13:26:45317][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/js/common.js]
+[DEBUG][2018/10/11 13:26:45317][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /js/common.js
+[DEBUG][2018/10/11 13:26:45317][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/js/common.js]
+[DEBUG][2018/10/11 13:26:45317][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:168)]
+Matching patterns for request [/js/common.js] are [/js/**]
+[DEBUG][2018/10/11 13:26:45316][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:26:45318][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 13:26:45318][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:193)]
+URI Template variables for request [/js/common.js] are {}
+[DEBUG][2018/10/11 13:26:45321][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:123)]
+Mapping [/js/common.js] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/js/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7c7515a6]]] and 1 interceptor
+[DEBUG][2018/10/11 13:26:45321][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/js/common.js] is: -1
+[DEBUG][2018/10/11 13:26:45322][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:26:45323][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request

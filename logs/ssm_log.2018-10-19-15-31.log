@@ -1,0 +1,174 @@
+[DEBUG][2018/10/19 15:31:42971][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/getUser]
+[DEBUG][2018/10/19 15:31:42993][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/getUser
+[DEBUG][2018/10/19 15:31:42993][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]
+[DEBUG][2018/10/19 15:31:42994][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/19 15:31:42995][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/19 15:31:42995][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37094245] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/19 15:31:42995][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/19 15:31:45707][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/getUser]
+[DEBUG][2018/10/19 15:31:45707][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/getUser
+[DEBUG][2018/10/19 15:31:45708][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]
+[DEBUG][2018/10/19 15:31:45708][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/19 15:31:45708][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/19 15:31:45708][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fb51c52] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/19 15:31:45709][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/19 15:31:45879][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [jdbc:mysql://101.132.116.22:3306/db_zsl?useSSL=false, UserName=root@114.102.177.110, MySQL Connector Java] will not be managed by Spring
+[DEBUG][2018/10/19 15:31:45880][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t where id = ? 
+[DEBUG][2018/10/19 15:31:45881][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 1(Integer)
+[DEBUG][2018/10/19 15:31:45904][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 1
+[DEBUG][2018/10/19 15:31:45905][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6fb51c52]
+[DEBUG][2018/10/19 15:31:45905][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/19 15:31:45909][org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:163)]
+Written [User [Hash = 67317464, id=1, userName=杜健, password=sfasgfaf, age=24, serialVersionUID=1]] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1654df66]
+[DEBUG][2018/10/19 15:31:45910][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/19 15:31:45911][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/19 15:31:47665][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/getUser]
+[DEBUG][2018/10/19 15:31:47666][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/getUser
+[DEBUG][2018/10/19 15:31:47666][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]
+[DEBUG][2018/10/19 15:31:47666][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/19 15:31:47666][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/19 15:31:47666][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cbd85c3] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/19 15:31:47667][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/19 15:31:47685][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [jdbc:mysql://101.132.116.22:3306/db_zsl?useSSL=false, UserName=root@114.102.177.110, MySQL Connector Java] will not be managed by Spring
+[DEBUG][2018/10/19 15:31:47686][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t where id = ? 
+[DEBUG][2018/10/19 15:31:47686][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 3(Integer)
+[DEBUG][2018/10/19 15:31:47708][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 1
+[DEBUG][2018/10/19 15:31:47709][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cbd85c3]
+[DEBUG][2018/10/19 15:31:47710][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/19 15:31:47713][org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:163)]
+Written [User [Hash = -1113108707, id=3, userName=宋美女, password=123456, age=18, serialVersionUID=1]] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1654df66]
+[DEBUG][2018/10/19 15:31:47714][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/19 15:31:47714][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/19 15:31:50114][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/getUser]
+[DEBUG][2018/10/19 15:31:50115][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/getUser
+[DEBUG][2018/10/19 15:31:50115][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]
+[DEBUG][2018/10/19 15:31:50115][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/19 15:31:50116][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/19 15:31:50116][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3292a367] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/19 15:31:50117][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/19 15:31:50142][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [jdbc:mysql://101.132.116.22:3306/db_zsl?useSSL=false, UserName=root@114.102.177.110, MySQL Connector Java] will not be managed by Spring
+[DEBUG][2018/10/19 15:31:50143][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t where id = ? 
+[DEBUG][2018/10/19 15:31:50143][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 10(Integer)
+[DEBUG][2018/10/19 15:31:50168][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 1
+[DEBUG][2018/10/19 15:31:50170][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3292a367]
+[DEBUG][2018/10/19 15:31:50170][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/19 15:31:50172][org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:163)]
+Written [User [Hash = 2121840657, id=10, userName=叶磊, password=12345, age=25, serialVersionUID=1]] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1654df66]
+[DEBUG][2018/10/19 15:31:50173][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/19 15:31:50173][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/19 15:31:52417][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/getUser]
+[DEBUG][2018/10/19 15:31:52418][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/getUser
+[DEBUG][2018/10/19 15:31:52418][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]
+[DEBUG][2018/10/19 15:31:52418][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/19 15:31:52419][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/19 15:31:52420][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@198b79c] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/19 15:31:52420][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/19 15:31:52447][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [jdbc:mysql://101.132.116.22:3306/db_zsl?useSSL=false, UserName=root@114.102.177.110, MySQL Connector Java] will not be managed by Spring
+[DEBUG][2018/10/19 15:31:52448][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t where id = ? 
+[DEBUG][2018/10/19 15:31:52449][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 12(Integer)
+[DEBUG][2018/10/19 15:31:52466][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 1
+[DEBUG][2018/10/19 15:31:52467][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@198b79c]
+[DEBUG][2018/10/19 15:31:52467][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/19 15:31:52469][org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:163)]
+Written [User [Hash = -551466510, id=12, userName=谭世成, password=1234, age=24, serialVersionUID=1]] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1654df66]
+[DEBUG][2018/10/19 15:31:52470][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/19 15:31:52470][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/19 15:31:58921][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/getUser]
+[DEBUG][2018/10/19 15:31:58921][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/getUser
+[DEBUG][2018/10/19 15:31:58922][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public com.study.ssm.model.User com.study.ssm.controller.UserController.getUser(java.lang.Integer)]
+[DEBUG][2018/10/19 15:31:58922][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/19 15:31:58922][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/19 15:31:58923][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad2c1ca] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/19 15:31:58923][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/19 15:31:58944][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [jdbc:mysql://101.132.116.22:3306/db_zsl?useSSL=false, UserName=root@114.102.177.110, MySQL Connector Java] will not be managed by Spring
+[DEBUG][2018/10/19 15:31:58945][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t where id = ? 
+[DEBUG][2018/10/19 15:31:58945][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 12(Integer)
+[DEBUG][2018/10/19 15:31:58971][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 1
+[DEBUG][2018/10/19 15:31:58971][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad2c1ca]
+[DEBUG][2018/10/19 15:31:58972][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/19 15:31:58974][org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:163)]
+Written [User [Hash = -551466510, id=12, userName=谭世成, password=1234, age=24, serialVersionUID=1]] as "application/json;charset=utf-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1654df66]
+[DEBUG][2018/10/19 15:31:58974][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/19 15:31:58975][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request

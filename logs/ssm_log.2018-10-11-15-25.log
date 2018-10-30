@@ -1,0 +1,44 @@
+[DEBUG][2018/10/11 15:25:13407][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/rest/file/]
+[DEBUG][2018/10/11 15:25:13411][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /rest/file/
+[DEBUG][2018/10/11 15:25:13413][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/rest/file/]
+[DEBUG][2018/10/11 15:25:13413][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /rest/file/
+[DEBUG][2018/10/11 15:25:13415][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/rest/file/]
+[WARN ][2018/10/11 15:25:13416][org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)]
+No mapping found for HTTP request with URI [/ssm/rest/file/] in DispatcherServlet with name 'SpringMVC'
+[DEBUG][2018/10/11 15:25:13416][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 15:25:1947 ][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/rest/file/index]
+[DEBUG][2018/10/11 15:25:1948 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /rest/file/index
+[DEBUG][2018/10/11 15:25:1949 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public java.lang.String com.study.ssm.controller.FileController.fileIndex()]
+[DEBUG][2018/10/11 15:25:1949 ][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'fileController'
+[DEBUG][2018/10/11 15:25:1949 ][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/rest/file/index] is: -1
+[DEBUG][2018/10/11 15:25:1950 ][org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1241)]
+Rendering view [org.springframework.web.servlet.view.JstlView: name 'loadFile'; URL [/WEB-INF/jsp/loadFile.jsp]] in DispatcherServlet with name 'SpringMVC'
+[DEBUG][2018/10/11 15:25:1951 ][org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:166)]
+Forwarding to resource [/WEB-INF/jsp/loadFile.jsp] in InternalResourceView 'loadFile'
+[DEBUG][2018/10/11 15:25:1953 ][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 15:25:21505][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/rest/file/down]
+[DEBUG][2018/10/11 15:25:21506][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /rest/file/down
+[DEBUG][2018/10/11 15:25:21507][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public void com.study.ssm.controller.FileController.down(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException]
+[DEBUG][2018/10/11 15:25:21507][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'fileController'
+[DEBUG][2018/10/11 15:25:21507][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/rest/file/down] is: -1
+[DEBUG][2018/10/11 15:25:21513][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 15:25:21514][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request

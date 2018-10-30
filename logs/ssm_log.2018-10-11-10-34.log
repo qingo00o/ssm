@@ -1,0 +1,36 @@
+[DEBUG][2018/10/11 10:34:55514][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/user/userList]
+[DEBUG][2018/10/11 10:34:55516][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/userList
+[DEBUG][2018/10/11 10:34:55517][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public java.lang.String com.study.ssm.controller.UserController.getUserList(org.springframework.ui.Model)]
+[DEBUG][2018/10/11 10:34:55517][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/11 10:34:55518][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/user/userList] is: -1
+[DEBUG][2018/10/11 10:34:55518][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/11 10:34:55518][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@793adc27] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/11 10:34:55519][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/11 10:34:55534][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:86)]
+JDBC Connection [jdbc:mysql://101.132.116.22:3306/db_zsl?useSSL=false, UserName=root@36.5.116.113, MySQL Connector Java] will not be managed by Spring
+[DEBUG][2018/10/11 10:34:55535][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==>  Preparing: select id, user_name, password, age from user_t 
+[DEBUG][2018/10/11 10:34:55536][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+==> Parameters: 
+[DEBUG][2018/10/11 10:34:55552][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139)]
+<==      Total: 15
+[DEBUG][2018/10/11 10:34:55554][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:168)]
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@793adc27]
+[DEBUG][2018/10/11 10:34:55554][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource
+[DEBUG][2018/10/11 10:34:55555][org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1241)]
+Rendering view [org.springframework.web.servlet.view.JstlView: name 'userList'; URL [/WEB-INF/jsp/userList.jsp]] in DispatcherServlet with name 'SpringMVC'
+[DEBUG][2018/10/11 10:34:55555][org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)]
+Added model object 'userList' of type [java.util.ArrayList] to request in view with name 'userList'
+[DEBUG][2018/10/11 10:34:55556][org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:166)]
+Forwarding to resource [/WEB-INF/jsp/userList.jsp] in InternalResourceView 'userList'
+[DEBUG][2018/10/11 10:34:55685][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request

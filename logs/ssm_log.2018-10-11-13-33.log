@@ -1,0 +1,58 @@
+[DEBUG][2018/10/11 13:33:47159][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing POST request for [/ssm/user/deleteUser]
+[DEBUG][2018/10/11 13:33:47161][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /user/deleteUser
+[DEBUG][2018/10/11 13:33:47162][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:299)]
+Returning handler method [public java.lang.String com.study.ssm.controller.UserController.deleteUser(java.lang.Integer)]
+[DEBUG][2018/10/11 13:33:47162][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:248)]
+Returning cached instance of singleton bean 'userController'
+[DEBUG][2018/10/11 13:33:47164][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:104)]
+Creating a new SqlSession
+[DEBUG][2018/10/11 13:33:47164][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:140)]
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26dc4998] was not registered for synchronization because synchronization is not active
+[DEBUG][2018/10/11 13:33:47164][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2018/10/11 13:33:5319 ][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/css/bootstrap.min.css.map]
+[DEBUG][2018/10/11 13:33:5320 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap.min.css.map
+[DEBUG][2018/10/11 13:33:5321 ][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/css/bootstrap-theme.css.map]
+[DEBUG][2018/10/11 13:33:5321 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap-theme.css.map
+[DEBUG][2018/10/11 13:33:5322 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap-theme.css.map]
+[DEBUG][2018/10/11 13:33:5322 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap-theme.css.map
+[DEBUG][2018/10/11 13:33:5322 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap.min.css.map]
+[DEBUG][2018/10/11 13:33:5323 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap-theme.css.map]
+[DEBUG][2018/10/11 13:33:5323 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap.min.css.map
+[DEBUG][2018/10/11 13:33:5324 ][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:168)]
+Matching patterns for request [/css/bootstrap-theme.css.map] are [/css/**]
+[DEBUG][2018/10/11 13:33:5324 ][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:193)]
+URI Template variables for request [/css/bootstrap-theme.css.map] are {}
+[DEBUG][2018/10/11 13:33:5324 ][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap.min.css.map]
+[DEBUG][2018/10/11 13:33:5324 ][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:123)]
+Mapping [/css/bootstrap-theme.css.map] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7c70b384]]] and 1 interceptor
+[DEBUG][2018/10/11 13:33:5325 ][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:168)]
+Matching patterns for request [/css/bootstrap.min.css.map] are [/css/**]
+[DEBUG][2018/10/11 13:33:5325 ][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/css/bootstrap-theme.css.map] is: -1
+[DEBUG][2018/10/11 13:33:5325 ][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:193)]
+URI Template variables for request [/css/bootstrap.min.css.map] are {}
+[DEBUG][2018/10/11 13:33:5325 ][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:123)]
+Mapping [/css/bootstrap.min.css.map] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7c70b384]]] and 1 interceptor
+[DEBUG][2018/10/11 13:33:5325 ][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:33:5326 ][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/css/bootstrap.min.css.map] is: -1
+[DEBUG][2018/10/11 13:33:5326 ][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 13:33:5327 ][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 13:33:5327 ][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request

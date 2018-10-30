@@ -1,0 +1,44 @@
+[DEBUG][2018/10/11 10:35:26125][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/css/bootstrap.min.css.map]
+[DEBUG][2018/10/11 10:35:26128][org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:861)]
+DispatcherServlet with name 'SpringMVC' processing GET request for [/ssm/css/bootstrap-theme.css.map]
+[DEBUG][2018/10/11 10:35:26129][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap-theme.css.map
+[DEBUG][2018/10/11 10:35:26128][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap.min.css.map
+[DEBUG][2018/10/11 10:35:26129][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap-theme.css.map]
+[DEBUG][2018/10/11 10:35:26130][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap-theme.css.map
+[DEBUG][2018/10/11 10:35:26130][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap-theme.css.map]
+[DEBUG][2018/10/11 10:35:26130][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:168)]
+Matching patterns for request [/css/bootstrap-theme.css.map] are [/css/**]
+[DEBUG][2018/10/11 10:35:26131][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:193)]
+URI Template variables for request [/css/bootstrap-theme.css.map] are {}
+[DEBUG][2018/10/11 10:35:26131][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:123)]
+Mapping [/css/bootstrap-theme.css.map] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@6611ece9]]] and 1 interceptor
+[DEBUG][2018/10/11 10:35:26131][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/css/bootstrap-theme.css.map] is: -1
+[DEBUG][2018/10/11 10:35:26132][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 10:35:26132][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
+[DEBUG][2018/10/11 10:35:26130][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap.min.css.map]
+[DEBUG][2018/10/11 10:35:26134][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:294)]
+Looking up handler method for path /css/bootstrap.min.css.map
+[DEBUG][2018/10/11 10:35:26137][org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:302)]
+Did not find handler method for [/css/bootstrap.min.css.map]
+[DEBUG][2018/10/11 10:35:26137][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:168)]
+Matching patterns for request [/css/bootstrap.min.css.map] are [/css/**]
+[DEBUG][2018/10/11 10:35:26138][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:193)]
+URI Template variables for request [/css/bootstrap.min.css.map] are {}
+[DEBUG][2018/10/11 10:35:26139][org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:123)]
+Mapping [/css/bootstrap.min.css.map] to HandlerExecutionChain with handler [ResourceHttpRequestHandler [locations=[ServletContext resource [/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@6611ece9]]] and 1 interceptor
+[DEBUG][2018/10/11 10:35:26139][org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:947)]
+Last-Modified value for [/ssm/css/bootstrap.min.css.map] is: -1
+[DEBUG][2018/10/11 10:35:26139][org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1034)]
+Null ModelAndView returned to DispatcherServlet with name 'SpringMVC': assuming HandlerAdapter completed request handling
+[DEBUG][2018/10/11 10:35:26140][org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:996)]
+Successfully completed request
