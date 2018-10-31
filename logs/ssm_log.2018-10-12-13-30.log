@@ -1,2 +1,0 @@
-[DEBUG][2018/10/12 13:30:000  ][org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:166)]
-Forwarding to resource [/WEB-INF/jsp/userList.jsp] in InternalResourceView 'userList'
