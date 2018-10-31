@@ -87,6 +87,7 @@
 		/* 根据用户点击添加或者编辑改变URL */
 		function changeUrl(flag){
 				if (flag) {
+					$("#id").removeAttr("name");
 					myUrl="/ssm/user/insertUser";
 				}else{
 					myUrl="/ssm/user/updateUser";
