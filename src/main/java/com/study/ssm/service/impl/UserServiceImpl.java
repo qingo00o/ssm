@@ -5,6 +5,7 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.study.ssm.dao.UserMapper;
 import com.study.ssm.model.User;
@@ -21,7 +22,7 @@ public class UserServiceImpl implements UserService{
 	}
 	@Override
 	public int insertUser(User user) {
-		return userMapper.insert(user);
+		return	userMapper.insert(user);
 	}
 	@Override
 	public List<User> getUserList() {
