@@ -1,10 +1,6 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : AliyunMysql
-Source Server Version : 50722
-Source Host           : 101.132.116.22:3306
-Source Database       : db_zsl
 
 Target Server Type    : MYSQL
 Target Server Version : 50722
