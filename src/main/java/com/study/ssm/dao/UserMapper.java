@@ -1,6 +1,8 @@
 package com.study.ssm.dao;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.study.ssm.model.User;
 
@@ -54,4 +56,6 @@ public interface UserMapper {
     int updateByPrimaryKey(User record);
     
     List<User> getUserList();
+
+    List<HashMap> getEcharts();
 }

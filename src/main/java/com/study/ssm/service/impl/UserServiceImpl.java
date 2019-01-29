@@ -1,6 +1,8 @@
 package com.study.ssm.service.impl;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -36,5 +38,7 @@ public class UserServiceImpl implements UserService{
 	public int updateUser(User user) {
 		return userMapper.updateByPrimaryKeySelective(user);
 	}
+	@Override
+	public List<HashMap> getEcharts() {return userMapper.getEcharts();}
 
 }

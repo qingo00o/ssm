@@ -1,11 +1,15 @@
 package com.study.ssm.controller;
 
 
-import java.util.List;
+import java.util.*;
 
 import javax.annotation.Resource;
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.http.HttpServletRequest;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.study.ssm.model.EchartsVO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -110,5 +114,26 @@ public class UserController {
 		}else {
 			return "删除用户失败";
 		}
+	}
+	@RequestMapping("/echarts")
+	@ResponseBody
+	public EchartsVO echarts(){
+		EchartsVO<Integer, Integer> echartsVO = new EchartsVO<>();
+		/*测试数据
+		List<Integer> ages = Arrays.asList(24, 25, 26, 27);
+		List<Integer> nums = Arrays.asList(2, 5, 3, 1);
+		*/
+		List<Integer> ages =new ArrayList<>();
+		List<Integer> nums = new ArrayList<>();
+
+		List<HashMap> maps = userService.getEcharts();
+		maps.forEach(map->{
+				ages.add((Integer) map.get("age"));
+				nums.add((Integer) map.get("count"));
+			echartsVO.setxAxisCategory(ages);
+			echartsVO.setDatas(nums);
+		});
+
+		return echartsVO;
 	}
 }
