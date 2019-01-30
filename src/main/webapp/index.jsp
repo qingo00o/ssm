@@ -12,6 +12,7 @@
 <body>
 <h2>Hello World!</h2>
 <div id="main" style="width: 600px;height:400px;"></div>
+<div id="myEcharts" style="width: 600px;height:400px;"></div>
 <script type="text/javascript">
     var myChart=echarts.init(document.getElementById('main'),'light');
     // 显示标题，图例和空的坐标轴
@@ -33,14 +34,61 @@
             data: []
         }]
     });
-    myChart.showLoading({text: '数据正在加载中...'  });
+    /*---------------------------我是进入初始化饼图代码的分界线---------------------------*/
+    //最简单的更改全局样式的方式，是直接采用颜色主题（theme）
+    var myPie=echarts.init(document.getElementById('myEcharts'),'dark');
+    myPie.setOption({
+        //设置全局背景色
+        backgroundColor: '#2c343c',
+        //设置文本样式
+        textStyle: {
+            color: 'rgba(255, 255, 255, 0.3)'
+        },
+        //视觉引导线的颜色设置
+        labelLine: {
+            lineStyle: {
+                color: 'rgba(255, 255, 255, 0.3)'
+            }
+        },
+        series : [
+            {
+                name: '访问来源',
+                type: 'pie',
+                roseType: 'angle',
+
+
+                //阴影、透明度、颜色、边框颜色、边框宽度设置
+                itemStyle: {
+                    // 阴影的大小
+                    shadowBlur: 200,
+                    // 阴影水平方向上的偏移
+                    shadowOffsetX: 0,
+                    // 阴影垂直方向上的偏移
+                    shadowOffsetY: 0,
+                    // 阴影颜色
+                    shadowColor: 'rgba(0, 0, 0, 0.5)',
+                    //emphasis是鼠标 hover 时候的高亮样式
+                    emphasis: {
+                        shadowBlur: 200,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                },
+                radius: '55%',
+                data:[]
+            }
+        ]
+    });
+    /*---------------------------我是数据在加载的分界线---------------------------*/
+    myChart.showLoading({text: '柱状图数据正在加载中...'  });
+    myPie.showLoading({text: '饼图数据正在加载中...'  });
     $.ajax({
         type:"get",
         async:true,
         url : "${pageContext.request.contextPath}/user/echarts",
         dataType:"json",
         success:function(data){
-            console.log(data)
+            console.log(data);
+            myChart.hideLoading();
             myChart.setOption({
                 xAxis: {
                     data: data.xAxisCategory
@@ -51,7 +99,34 @@
                     data: data.datas
                 }]
             });
-            myChart.hideLoading();
+
+        }
+    });
+    /*---------------------------我是饼图加载数据代码的分界线---------------------------*/
+    $.ajax({
+        type:"get",
+        async:true,
+        url : "${pageContext.request.contextPath}/user/echartsPie",
+        dataType:"json",
+        success:function(data){
+            myPie.hideLoading();
+            myPie.setOption({
+                series : [{
+                    data:(function(){
+                        var res = [];
+                        for(var key in data){
+                            console.log("属性：" + key + ",值：" + data[key]);
+                            res.push({
+                                //通过把data进行遍历循环来获取数据并放入Echarts中
+                                name: key,
+                                value: data[key]
+                            });
+                        }
+                        return res;
+                    })()
+                }]
+            });
+
         }
     });
 </script>

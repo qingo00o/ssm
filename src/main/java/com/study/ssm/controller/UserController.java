@@ -115,6 +115,13 @@ public class UserController {
 			return "删除用户失败";
 		}
 	}
+	/**
+	 * @Author DuJian
+	 * @Description 测试echarts的异步加载返回数据给柱状图
+	 * @Date 2019/1/30 9:07
+	 * @Param []
+	 * @Return com.study.ssm.model.EchartsVO
+	 **/
 	@RequestMapping("/echarts")
 	@ResponseBody
 	public EchartsVO echarts(){
@@ -135,5 +142,16 @@ public class UserController {
 		});
 
 		return echartsVO;
+	}
+
+	@RequestMapping("/echartsPie")
+	@ResponseBody
+	public Map echartsPie(){
+		HashMap<String, Integer> map = new HashMap<>();
+		map.put("大专",25);
+		map.put("本科",53);
+		map.put("研究生",12);
+		map.put("大专以下",3);
+		return map;
 	}
 }
